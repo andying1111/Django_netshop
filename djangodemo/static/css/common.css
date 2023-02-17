@@ -1,0 +1,349 @@
+/* 公共样式css文件 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?o1xvrh');
+    src: url('../fonts/icomoon.eot?o1xvrh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?o1xvrh') format('truetype'),
+        url('../fonts/icomoon.woff?o1xvrh') format('woff'),
+        url('../fonts/icomoon.svg?o1xvrh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.fr .icomoon {
+    font-family: 'icomoon';
+    font-size: 20px;
+    line-height: 16px;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.style-red {
+    color: #c81623;
+}
+
+.spancer {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 12px 0;
+}
+
+/* 顶部快捷导航start */
+.shoutcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shoutcut li {
+    float: left;
+    list-style: none;
+    margin-left: 2px;
+}
+
+/* 选择所有的偶数的小li */
+.shoutcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+/*header制作  */
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: pink; */
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 175px;
+    height: 56px;
+    background-color: #c81623
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../img/logo.jpg) no-repeat;
+    /* 第一种方法 淘宝*/
+    /* overflow: hidden;
+    text-indent: -999px; */
+    /* 第二种方法 京东*/
+    font-size: 0;
+}
+
+/* search */
+.search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+}
+
+.text {
+    float: left;
+    width: 445px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    padding-left: 10px;
+    color: #ccc;
+}
+
+.btn {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background-color: #b1191a;
+    border: 0;
+    font-size: 16px;
+}
+
+/* hotwords */
+.hotwords {
+    position: absolute;
+    top: 65px;
+    left: 348px;
+
+}
+
+.hotwords a {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 138px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    text-align: center;
+}
+
+.car {
+    font-family: 'icomoon';
+    color: #da5555;
+    margin-right: 2px;
+}
+
+.arrow {
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    /* 文字应该左侧对齐 文字才能往右走显示 */
+    left: 100px;
+    background-color: #e60012;
+    height: 14px;
+    padding: 0 3px;
+    line-height: 14px;
+    color: #fff;
+    /* border-radius: 左上角 右上角 右下角 左下角; */
+    border-radius: 7px 7px 7px 0;
+}
+
+/* nav 部分 */
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+    width: 209px;
+    height: 45px;
+    background-color: pink;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    background-color: #b1191a;
+    font-style: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.dropdown .dd {
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.menu_item {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+
+.menu_item:hover {
+    background-color: #fff;
+    padding-left: 15px;
+}
+
+/* 鼠标经过li 里面的 a 变颜色 */
+.menu_item:hover a {
+    color: #c81623;
+}
+
+.menu_item a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.menu_item i {
+    float: right;
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: #fff;
+}
+
+.navitems {
+    margin-left: 10px;
+}
+
+.navitems li {
+    float: left;
+}
+
+.navitems li a {
+    display: block;
+    height: 45px;
+    padding: 0 25px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+/* footer 部分 */
+.footer {
+    /* 原来416px 减去30px给顶部30px 余386px*/
+    height: 445px;
+    background-color: #f5f5f5;
+    /* 距离顶部30px */
+    padding-top: 30px;
+}
+
+/* mod_service 服务模块 */
+.mod_service {
+    height: 79px;
+    /* background: pink; */
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service li {
+    float: left;
+    width: 240px;
+    height: 79px;
+}
+
+/* 简化公共代码 */
+.mod-service-icon {
+    float: left;
+    width: 36px;
+    height: 42px;
+    margin-left: 35px;
+    background: url(../img/jl.png) no-repeat;
+}
+
+/* 多 */
+.mod_service_duo {
+    background-position: 0 -192px;
+}
+
+/* 快 */
+.mod_service_kuai {
+    background-position: -41px -192px;
+}
+
+/* 好 */
+.mod_service_hao {
+    background-position: -82px -192px;
+}
+
+/* 省 */
+.mod_service_sheng {
+    background-position: -123px -192px;
+}
+
+.mod_service_title {
+    float: left;
+    margin-left: 5px;
+}
+
+.mod_service_tit h5 {
+    margin: 2px 0;
+}
+
+/* mod_help 帮助模块 */
+.mod_help {
+    height: 187px;
+    /* background-color: palegoldenrod; */
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_help_item {
+    float: left;
+    width: 150px;
+    padding: 20px 0 0 50px;
+}
+
+.mod_help_item dt {
+    height: 25px;
+    font-size: 16px;
+}
+
+.mod_help_item dd {
+    height: 22px;
+}
+
+/* .mod_help_app dt,
+.mod_help_app p,
+.mod_help_app img {
+    padding-left: 15px;
+} */
+
+.mod_help_app img {
+    margin: 7px 0;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright_links {
+    margin: 20px 0 15px 0;
+}
+
+.mod_copyright_info {
+    line-height: 20px;
+}
